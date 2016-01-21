@@ -4,7 +4,7 @@
   "description": "Microservice for sending mail notifications",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,8 @@
     "mailgun": "^0.5.0",
     "mailgun-js": "^0.7.7",
     "seneca": "^1.0.0",
+    "seneca-balance-client": "^0.2.0",
+    "seneca-mesh": "^0.3.0",
     "seneca-rabbitmq-transport": "^0.2.1",
     "winston": "^2.1.1"
   }

@@ -12,6 +12,9 @@ const MailingPlugin = require("./actions/mailing");
 
 logger.debug('registering plugins');
 seneca
+    .use('mesh', {
+        bash: true
+    })
     .use(RabbitMQTransport)
     .use(MailingPlugin, {
         mailer: mailer.create({
